@@ -1,0 +1,121 @@
+/* Ensure body and html elements cover the entire viewport */
+html,
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  position: fixed;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-size: cover; /* Ensures the image covers the full area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  opacity: 0.7; /* Set background image opacity */
+  z-index: -1; /* Ensures the background stays behind the content */
+  overflow: hidden;
+}
+
+/* General Home Page Styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*Ensure the container takes up the full viewport height */
+  color: white; /* Change text color for better visibility
+  /* position: relative; This helps with positioning any absolute elements if needed */
+
+  overflow: hidden; /* Optional: Prevents overflow if any child elements exceed container bounds */
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: flex-end; /* Aligns nav links to the right */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  width: 100%; /* Ensures the header covers the full width */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #ff000079;
+}
+
+/* Footer Styles */
+.home-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: "rgba(255, 255, 255, 0.7)";
+  box-shadow: "none";
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns buttons to the left */
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Home Page Buttons */
+.home-buttons {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center; /* Aligns buttons to the left */
+  padding-left: 20px; /* Add some padding to separate from the edge */
+}
+
+.home-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px; /* Slightly curved edges */
+  background-color: #2ea8b1; /* Light pink color */
+  color: white; /* Text color for better contrast */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.home-buttons button:hover {
+  background-color: #0d5d52; /* Darker pink for hover effect */
+}
+
+#navbarNav {
+  display: flex;
+  justify-content: flex-end;
+}

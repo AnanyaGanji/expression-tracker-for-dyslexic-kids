@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #171616; /* Vibrant red */
+  --secondary-color: #eba421; /* Vibrant yellow */
+  --accent-color: #74b9ff; /* Vibrant blue */
+  --text-color:rgb(21, 20, 20); /* Dark gray for text */
+  --background-color: #a4cada; /* Light background */
+  --correct-color: #00b894; /* Bright green for correct */
+  --wrong-color: #d63031; /* Bright red for wrong */
+  --word-color: white;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  transition: background-color 0.5s ease; /* Smooth transition for background change */
+}
+
+.correct {
+  background-color: var(--correct-color) !important;
+}
+
+.wrong {
+  background-color: var(--wrong-color) !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 15px 25px rgba(31, 16, 16, 0.038);
+  text-align: center;
+}
+
+.timer {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  
+  margin-bottom: 15px;
+}
+
+.question-img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(28, 22, 22, 0.218);
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--word-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+.selected {
+  background-color: var(--accent-color); /* Highlight selected option */
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.end-message {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 20px;
+}
+
+.score {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+.end-screen {
+  display: none; /* Hidden by default */
+  background-color: #a4cada; /* Background color */
+  color: var(--text-color); /* Ensure text color contrasts with background */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Ensure it covers the entire screen */
+  top: 0;
+  left: 0;
+}
+
+.end-screen.show {
+  display: flex; /* Show when needed */
+}
+
+.hide {
+  display: none;
+}
