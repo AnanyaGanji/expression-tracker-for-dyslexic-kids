@@ -3,21 +3,25 @@
 A smart expression tracking system designed to analyze facial expressions of children with dyslexia while they engage in educational activities. The system helps educators and researchers understand emotional responses to learning materials, improving engagement and personalized learning strategies.
 
 
-🚀 Features
-✅ Tracks and analyzes facial expressions in real-time
-✅ Uses Hugging Face models for accurate emotion recognition
-✅ Simple and intuitive UI for educators and parents
-✅ Secure backend with API integration
-✅ IoT-ready for real-time monitoring
+🚀 Features <br>
+✅ Tracks and analyzes facial expressions in real-time <br>
+✅ Uses Hugging Face models for accurate emotion recognition <br>
+✅ Simple and intuitive UI for educators and parents <br>
+✅ Secure backend with API integration <br>
+✅ IoT-ready for real-time monitoring <br>
 
-🛠️ Tech Stack
-Frontend: React
-Backend: Node.js, Express
-Database: MongoDB
-AI Model: Hugging Face APIs
+<br>
 
-📜 Usage
-Open the application in a web browser.
-Allow camera permissions to enable facial tracking.
-Start the game or learning session.
-The system will analyze facial expressions and provide feedback.
+🛠️ Tech Stack <br>
+Frontend: React <br>
+Backend: Node.js, Express <br>
+Database: MongoDB  <br>
+AI Model: Hugging Face APIs  <br>
+
+<br>
+
+📜 Usage <br>
+Open the application in a web browser.  <br>
+Allow camera permissions to enable facial tracking.  <br>
+Start the game or learning session.  <br>
+The system will analyze facial expressions and provide feedback.  <br>
